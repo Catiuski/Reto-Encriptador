@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Encriptador</title>
+  
+</head>
+<body class="container">
+    
+    <header> 
+        <img src="./assets/Logo.png" alt="Logo Alura Latam" >
+    </header>
+      
+    <main class="main">
+        <section class="seccion__1">    
+            <textarea class="text-area" oninput="validarMinusculas(this)" onkeydown="permitirTeclasEspeciales(event)"cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+
+        <p class="informacion"><img src="./assets/Alert.png" width="20px" height="20px" alt="Icono alerta">Solo letas minusculas y sin acentos.</p>
+            <div class="contenedor__botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="seccion__2">
+            <textarea class="mensaje"  placeholder="Ingresa el texto que desees encriptar o desencriptar.   Ningun mensaje fue encontrado" oninput="validarMinusculas(this)" onkeydown="permitirTeclasEspeciales(event)" cols="50" rows="10" ></textarea> 
+    </div>
+    <div class="contenedor__mensaje" >
+       <img class="imagen" src="./assets/Muñeco.png" alt="Muñeco"  width="200px"position="center"> 
+    </div>
+    <div class="contenedor__parrafo" >
+        <p> </p>
+    <div class="contenedor__copiar">
+        <button class="copiar" onclick="btnCopiar()">Copiar</button></div> 
+    </div>
+</section>
+    </main>
+    <script src="/script.js"></script>
+    
+</body>
+</html>
